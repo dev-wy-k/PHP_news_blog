@@ -1,0 +1,175 @@
+
+:root{
+    --primary-soft: #f3f3f3;
+}
+::-webkit-scrollbar{
+    height: .2em;
+    width: .3em;
+    background: transparent;
+}
+
+.header{
+    position: sticky;
+    top: 0.2rem;
+    z-index: 2000;
+}
+.navbar{
+    position: sticky !important;
+    top: 15px !important;
+    z-index: 1001 !important;
+}
+
+.nav-menu{
+
+}
+.nav-menu ul{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+.menu-title{
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #949494;
+}
+.menu-item{
+    transition: 0.3s;
+}   
+.menu-item:hover{
+    background-color: var(--primary-soft);
+    border-radius: 0.25rem;
+}
+.menu-item-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark);
+    padding: 10px;
+    border-radius: 0.25rem;
+
+}
+.menu-item-link:hover{
+    text-decoration: none;
+    color: var(--dark);
+    border-radius: 0.25rem;
+
+}
+
+.menu-item-link span{
+
+}
+.menu-item-link i{
+
+}
+.menu-item-link.active{
+    background-color: var(--primary);
+    color: white !important;
+
+}
+.menu-spacer{
+    padding: 10px 0;
+}
+.content{
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
+    
+}
+.nav-brand{
+    position: sticky;
+    top: 0;
+}
+.sidebar{
+    overflow: scroll;
+}
+.show-sidebar-btn{
+    cursor: pointer;    
+}
+.sidebar.open{
+    
+}
+.user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card{
+    border: none;
+}
+
+.status-card{
+    transition: 0.3s;
+    border: none;
+}
+.status-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    
+}
+.status-card:active{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    
+    
+}
+.ov-img{
+    margin-left: -30px;
+}
+.item-carousel{
+    margin-top: -100px;
+}
+.item-card-img{
+    height: 200px;
+
+}
+.sub-list tr{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sub-list tr:active{
+    transform: scale(1.02);
+
+}
+.full-screen-card{
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2005;
+    overflow: scroll;
+}
+
+.table tr td {
+    vertical-align: middle !important ;
+}
+
+.front-panel-right-sidebar{
+    position: sticky !important;
+    top: 0px;
+    overflow: scroll !important; 
+}
+
+.post{
+    transition: .5s;
+}
+
+.post:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0.325rem 0.75rem rgb(0 0 0 / 8%) !important;    
+}
+
+
+@media screen and (max-width: 780px){
+    .sidebar{
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background-color: white;
+        margin-left: -100%;
+    }
+    .item-carousel-card{
+        margin-top: 100px;
+    }
+}
